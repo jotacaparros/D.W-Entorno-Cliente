@@ -1,5 +1,5 @@
-let palindromo = prompt('Introduce una palabre o frase y te digo si es palindromo');
 
+let palindromo = prompt('Introduce una palabre o frase y te digo si es palindromo');
 let palindromoMinusculo = palindromo.toLowerCase();
 var contadorVerdadero = 0;   
 let palindromoMinSinEspacios = palindromoMinusculo.replace(/\s/g,'');
