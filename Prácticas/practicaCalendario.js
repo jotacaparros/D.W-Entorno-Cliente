@@ -10,17 +10,21 @@ if (fecha[0] > 12 || fecha[0] < 1 || fecha[1] > 9999 || fecha[1] < 1){
     document.write('Fecha no válida. No me marees y pon algo con sentido.');
 }
 
-var mes = parseInt(fecha[0] - 1);
+var mes = parseInt(fecha[0]);
 document.write(mes);
+var mesMenos = parseInt(fecha[0] - 1);
+document.write(mesMenos);
 
 var ano = parseInt(fecha[1]);
 var diasMes = new Date(ano, mes, 0).getDate();
-document.write(new Date(1995, 9, 31).toDateString());
+document.write(new Date(1995, 9, 31).toDateString() + '<br>');
+
+document.write(diasMes);
 document.write('<br>' + diasMes + '<br>');
 
 for ( let i = 1; i <= diasMes; i++){
     let day;
-    switch (new Date(ano, mes, i).getDay()) {
+    switch (new Date(ano, mesMenos, i).getDay()) {
         case 0:
           day = "Domingo";
           break;
