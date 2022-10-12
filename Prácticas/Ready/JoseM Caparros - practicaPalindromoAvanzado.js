@@ -16,7 +16,9 @@ let arrayReves = arrayPalindromo.reverse().join('');
 
 //Compruebo que sean iguales 
 if (arrayDelante === arrayReves){
-    document.write("Vaya palíndromo");
+    document.write("¡Vaya palíndromo!");
+}else{
+    document.write("No hay palíndromo que valga");
 }
 
 
