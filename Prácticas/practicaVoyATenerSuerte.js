@@ -3,6 +3,8 @@ var control = true;
 var internet;
 
 function redireccionar(){
+   
+   
     direccion = paginaRandom();
     if(control==true){
         abrirPagina(direccion);
@@ -12,9 +14,8 @@ function redireccionar(){
         cambioPagina(direccion);
     }
 
-    // if(internet){
-    //     document.write('ahora');
-    // }
+       
+
 
 }
 
