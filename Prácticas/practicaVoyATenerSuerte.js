@@ -6,9 +6,15 @@ var direccion;
 var control = true;
 var internet;
 
+<<<<<<< HEAD
+function redireccionar(){
+   
+   
+=======
 function redireccionar(){  
 
     //Pillamos número aleatorio y lo guardamos en direccion
+>>>>>>> a9aa4363f320364519da960549dea8a9faf09eaa
     direccion = paginaRandom();
 
     //Pasamo el control para abrir la ventana por primera vez
@@ -28,6 +34,13 @@ function redireccionar(){
             abrirPagina(direccion);
         }       
     }
+<<<<<<< HEAD
+
+       
+
+
+=======
+>>>>>>> a9aa4363f320364519da960549dea8a9faf09eaa
 }
 //Esta funcion me da un numero aleatorio entre el 0 y el 2
 function paginaRandom() {
