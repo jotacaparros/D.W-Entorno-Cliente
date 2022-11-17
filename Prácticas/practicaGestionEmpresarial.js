@@ -32,22 +32,39 @@ class empleado {
 
     }
 
-    contratado() {
-        document.write("Enhorebuena. Has sido seleccionado");
+    contratado(nombre) {
+        document.write("Enhorebuena " + nombre + " . Has sido seleccionado." + "<br>");
     }
 
-    noDasLaTalla(){
-        document.write("Lo sentimos mucho, no ha sido seleccionado");
+    noDasLaTalla(nombre){
+        document.write("Lo sentimos mucho, " + nombre + " no ha sido seleccionado." + "<br>");
     }
 
 }
 
-let candidatos = [];
+const candidatos = [];
 
 for (let i = 0; i < 3; i++){
-    let candidato = new empleado();
-    candidato
+   
+    candidatos [i] =  new empleado();
 
+    candidatos[i].nombre = prompt("Nombre del empleado: ");
+    candidatos[i].edad = parseInt(prompt("Edad del empleado: "));
+    candidatos[i].salario = parseInt(prompt("Salario del empleado: "));
+    
+} 
+
+for (let i = 0; i < 3; i++){
+    procesoDeSeleccion(i);
 }
 
-procesoDeSeleccion(candidato1.edad, candidato1.salario);
+
+
+function procesoDeSeleccion(x)
+{
+    if (candidatos[x].edad > 60 || candidatos[x].salario > 45000){
+        candidatos[x].noDasLaTalla(candidatos[x].nombre);
+    }else {
+        candidatos[x].contratado(candidatos[x].nombre);
+    }
+}
