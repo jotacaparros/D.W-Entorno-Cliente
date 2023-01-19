@@ -1,0 +1,26 @@
+body {
+    text-align: center; 
+    font-family: sans-serif;
+}
+
+div {
+    margin:20px;
+}
+
+#contenedor {
+    width:300px;
+    margin:auto;
+}
+
+#adelante, #atras {
+    padding:15px; 
+    width: 130px; 
+    float: left;
+    color: white; 
+    border-radius: 40px; 
+    background: rgb(202, 60, 60);
+}
+
+#adelante:hover, #atras:hover {
+    background: rgb(66, 184, 221);
+}
