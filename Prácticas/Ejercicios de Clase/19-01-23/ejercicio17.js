@@ -36,9 +36,10 @@ function crearNodo(){
     let donde, nodoTN;
 
     let nodo = document.createElement("div");
-    if(this.id == 'anadir'){
+    if(this.id == 'anadir'){   
         donde = document.body;
-        nodoTN= document.createTextNode("Nodo creado " + contador);
+        nodoTN= document.createTextNode("Nodo creado " + contador);      
+        
     } else{
         donde = document.getElementById('nodoRaiz');
         nodoTN= document.createTextNode("Nodo anidado " + contador);
