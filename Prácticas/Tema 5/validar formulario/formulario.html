@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Validando formularios</title>
+    <style>
+        span.error {
+          color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Validando formularios</h1>
+    <p>Este formulario tiene una serie de validaciones para comprobar que los campos estén correctamente rellenados antes de enviarlo.</p>
+    <p>Asegúrate de que todos los campos estén correctamente rellenados antes de hacer clic en el botón Enviar.</p>
+    <form id="formulario">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre">
+      <span id="nombreError"></span>
+      <br>
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" name="apellidos">
+      <br>
+      <label for="edad">Edad:</label>
+      <input type="text" id="edad" name="edad">
+      <span id="edadError"></span>
+      <br>
+      <label for="email">Correo electrónico:</label>
+      <input type="text" id="email" name="email">
+      <span id="emailError"></span>
+      <br>
+      <input type="submit" value="Enviar">
+      <input type="button" value="Cancelar" onclick="location.href='index.html'">
+    </form>
+  </body>
+  <script src="formulario.js"></script>
